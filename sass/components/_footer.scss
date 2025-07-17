@@ -1,0 +1,30 @@
+.footer {
+  background: $color-fondo-footer;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: $fuente-principal;
+    letter-spacing: 1px;
+  }
+
+  .footer-socials a {
+    margin: 0 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2) rotate(10deg);
+    }
+  }
+}
+
+.logotipofooter {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+}

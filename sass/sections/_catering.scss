@@ -1,0 +1,37 @@
+.nuestro-catering {
+  text-align: center;
+}
+
+.catering-cards {
+  max-width: 1200px;
+  margin: 4rem auto;
+  @include responsive-grid(250px);
+  padding: 0 2rem;
+}
+
+.card-catering {
+  @extend %card-base;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+    color: #b53d65;
+    text-transform: uppercase;
+  }
+
+  p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

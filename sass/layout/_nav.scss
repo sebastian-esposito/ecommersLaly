@@ -1,0 +1,23 @@
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.navegacion-superior ul {
+  gap: 2rem;
+}
+
+.navegacion-superior a {
+  font-size: 1.1rem;
+  color: $color-principal;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    color: $color-secundario;
+  }
+}
