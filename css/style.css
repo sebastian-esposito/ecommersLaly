@@ -1,87 +1,92 @@
+.top-bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Playpen Sans Deva", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans Deva", cursive;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    gap: 5rem;
+  list-style: none;
+  display: flex;
+  gap: 5rem;
 }
 
 /* Header */
 .logotipo {
-    border-radius: 80%;
-    width: 150px;
-    height: 150px;
-    margin: 3%;
+  border-radius: 80%;
+  width: 150px;
+  height: 150px;
+  margin: 3%;
 }
 
 .index-header {
-    background-image: url(../img/fondo2-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  background-image: url(../img/fondo2-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .top-bars {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 0.5rem 1rem; 
-    border-radius: 0 0 12px 12px; 
+  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 12px 12px;
 }
+
 .top-bars ul {
-    display: flex;
-    gap: 2rem; 
+  display: flex;
+  gap: 2rem;
 }
-
-
 
 .top-bars ul li a,
 .navegacion-superior ul li a {
-    color: rgb(87, 25, 168);
-    text-decoration: none;
-    font-weight: 600; 
-    transition: color 0.3s ease; 
+  color: rgb(87, 25, 168);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
+
 .top-bars ul li a:hover,
 .navegacion-superior ul li a:hover {
-    color: rgb(255, 105, 180); 
+  color: rgb(255, 105, 180);
 }
 
 .logotipo {
-    border-radius: 50%;
-    width: 120px; 
-    height: 120px;
-    margin: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .section-nav {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 0 2rem;
-    gap: 2rem;
-    flex-wrap: wrap; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
+
 .navegacion-superior ul {
-    gap: 2rem; 
+  gap: 2rem;
 }
 
 .navegacion-superior a {
-    font-size: 1.1rem; 
+  font-size: 1.1rem;
 }
 
 /* Main */
 .nuestro-productos {
-    color: rgb(87, 25, 168);
-    text-align: center;
-    margin: 2rem 0;
+  color: rgb(87, 25, 168);
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .cards-container {
@@ -89,21 +94,21 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .card-productos {
   display: flex;
-  flex-direction: column;         
-  justify-content: space-between;  
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
-  height: 100%;                    
-  max-width: 100%;                 
+  height: 100%;
+  max-width: 100%;
 }
 
 .card-productos:hover {
@@ -112,8 +117,8 @@ ul {
 
 .card-productos img {
   width: 100%;
-  height: 230px;        
-  object-fit: cover;    
+  height: 230px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -131,20 +136,21 @@ ul {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  align-self: center;  
+  align-self: center;
 }
 
 .card-productos button:hover {
   background-color: rgb(255, 105, 180);
   color: rgb(255, 255, 255);
 }
+
 .nuestra-empresa {
   max-width: 900px;
   margin: 4rem auto;
   padding: 2rem;
-  background: linear-gradient(to right, #fff, #f9f3f3);
+  background: linear-gradient(to right, rgb(255, 255, 255), #f9f3f3);
   border-radius: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: "Playpen Sans Deva", cursive;
   color: #333;
 }
@@ -153,7 +159,7 @@ ul {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #c94f7c;
+  color: rgb(201, 79, 124);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -163,15 +169,16 @@ ul {
   line-height: 1.8;
   text-align: justify;
 }
+
 /* Footer */
 .logotipofooter {
-    width: 5rem;
-    height: 5rem;
-    object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
 }
 
 .footer {
-  background: linear-gradient(45deg, #c94f7c, #f7c1d9);
+  background: linear-gradient(45deg, rgb(201, 79, 124), #f7c1d9);
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -203,8 +210,9 @@ ul {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
 }
+
 .catering-cards {
   max-width: 1200px;
   margin: 4rem auto;
@@ -215,9 +223,9 @@ ul {
 }
 
 .card-catering {
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
@@ -229,39 +237,40 @@ ul {
   object-fit: cover;
 }
 
-.card-catering h3  {
+.card-catering h3 {
   margin: 1rem 0 0.5rem;
   font-size: 1.4rem;
-  color: #b53d65;
+  color: rgb(181, 61, 101);
   text-transform: uppercase;
 }
 
 .card-catering p {
   padding: 0 1rem 1rem;
   font-size: 1rem;
-  color: #555;
+  color: rgb(85, 85, 85);
 }
 
 .card-catering:hover {
   transform: scale(1.05);
 }
-.nuestro-catering{
+
+.nuestro-catering {
   text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .section-nav {
-        flex-direction: column;
-    }
-
-    .top-bars {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-nav {
+    flex-direction: column;
+  }
+  .top-bars {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
