@@ -1,0 +1,86 @@
+/* Main */
+.nuestro-productos {
+    color: $colorletrasvioletas;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch; 
+}
+
+.card-productos {
+  display: flex;
+  flex-direction: column;         
+  justify-content: space-between;  
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px $colronegro;
+  transition: transform 0.2s ease;
+  height: 100%;                    
+  max-width: 100%;                 
+}
+
+.card-productos:hover {
+  transform: scale(1.05);
+}
+
+.card-productos img {
+  width: 100%;
+  height: 230px;        
+  object-fit: cover;    
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-productos h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+.card-productos button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 192, 203);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center;  
+}
+
+.card-productos button:hover {
+  background-color: $colorrosaprincipal;
+  color: rgb(255, 255, 255);
+}
+.nuestra-empresa {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: linear-gradient(to right, rgb(255, 255, 255), #f9f3f3);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px $colronegro;
+  font-family: "Playpen Sans Deva", cursive;
+  color: #333;
+}
+
+.nuestra-empresa h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color:$rosasuplente;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nuestra-empresa p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}

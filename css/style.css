@@ -1,20 +1,49 @@
+.tortas-page {
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, rgb(255, 240, 245), rgb(255, 228, 249));
+  text-align: center;
+}
+.tortas-page .titulo-principal {
+  font-family: "Playpen Sans Deva", cursive;
+  font-size: 2.8rem;
+  color: rgb(208, 109, 185);
+  margin-bottom: 1.5rem;
+}
+.tortas-page .subtitulo {
+  font-size: 1.2rem;
+  color: rgb(107, 62, 100);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+.tortas-page .tortas-carousel {
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(208, 109, 185, 0.25);
+}
+.tortas-page .tortas-carousel img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+.tortas-page .tortas-carousel .carousel-control-prev-icon,
+.tortas-page .tortas-carousel .carousel-control-next-icon {
+  background-color: rgb(208, 109, 185);
+  border-radius: 50%;
+  padding: 10px;
+}
+.tortas-page .tortas-carousel .carousel-control-prev,
+.tortas-page .tortas-carousel .carousel-control-next {
+  filter: drop-shadow(0 0 5px rgb(208, 109, 185));
+}
+
 .top-bars {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Playpen Sans Deva", cursive;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  gap: 5rem;
 }
 
 /* Header */
@@ -271,6 +300,18 @@ ul {
     flex-direction: column;
     align-items: flex-end;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans Deva", cursive;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
