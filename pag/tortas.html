@@ -3,22 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--css-->
-    <link rel="stylesheet" href="../css/style.css" />
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <title>lalys</title>
+
+    <!-- Fuente Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Tortas | Lalys</title>
   </head>
   <body>
     <header class="index-header">
@@ -33,7 +38,6 @@
     <a class="nav-link" href="./pag/formulario.html">nuestra empresa</a>
   </li>
 </ul>
-</nav>
 
       <section class="section-nav">
         <img class="logotipo" src="../img/logoLalys.png" alt="logo lalys" />
@@ -47,39 +51,62 @@
           </ul>
         </nav>
       </section>
-
     </header>
-<main class="tortas-page">
-  <h1 class="titulo-principal">Tortas personalizadas</h1>
-  <h2 class="subtitulo">
-    Creamos tortas temáticas con diseños únicos y especiales, totalmente personalizadas. <br /><br />
-    Drip cakes, letter y number cakes, tortas forradas, y cubiertas con butter cream o ganache de chocolate. <br /><br />
-    <strong>SOÑALA, nosotros la hacemos REALIDAD…</strong>
-  </h2>
 
-  <div id="carouselTortas" class="carousel slide tortas-carousel" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../img/torta-1.jpg" class="d-block w-100" alt="Torta 1">
+    <main class="tortas-page">
+      <h1 class="titulo-principal">Tortas personalizadas</h1>
+      <h2 class="subtitulo">
+        Creamos tortas temáticas con diseños únicos y especiales, totalmente
+        personalizadas. <br /><br />
+        Drip cakes, letter y number cakes, tortas forradas, y cubiertas con
+        butter cream o ganache de chocolate. <br /><br />
+        <strong>SOÑALA, nosotros la hacemos REALIDAD…</strong>
+      </h2>
+
+      <div
+        id="carouselTortas"
+        class="carousel slide tortas-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/torta-1.jpg" class="d-block w-100" alt="Torta 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/torta11.jpg" class="d-block w-100" alt="Torta 2" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/tortas13.webp"
+              class="d-block w-100"
+              alt="Torta 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/torta13.jpg" class="d-block w-100" alt="Torta 4" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselTortas"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselTortas"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-      <div class="carousel-item">
-        <img src="../img/torta11.jpg" class="d-block w-100" alt="Torta 2">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/torta12.jpeg" class="d-block w-100" alt="Torta 3">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/torta13.jpg" class="d-block w-100" alt="Torta 4">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTortas" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselTortas" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</main>
+    </main>
+
     <footer class="footer">
       <div class="footer-content">
         <p>&copy; 2025 Lalys. Todos los derechos reservados.</p>
@@ -107,10 +134,12 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"
-  ></script>
 </html>

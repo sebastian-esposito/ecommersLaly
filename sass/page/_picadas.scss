@@ -1,0 +1,88 @@
+/* General */
+body {
+  font-family: 'Playpen Sans Deva', cursive;
+  background-color: #fff0f5; /* rosa claro */
+  margin: 0;
+  padding: 0;
+  color: #4b0049; /* violeta oscuro */
+}
+
+/* Main container */
+main.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header vertical */
+.header-tamaños {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fce4ec; /* rosa pastel */
+  padding: 1rem;
+  border-left: 5px solid #d81b60; /* fucsia */
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Picada Card */
+.picada-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Imagen de la picada */
+.picada-card img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Descripción */
+.picada-descripcion {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  background-color: #fff8fb;
+}
+
+.picada-descripcion h3 {
+  color: #880e4f; /* violeta fuerte */
+  margin-top: 0;
+}
+
+.picada-descripcion p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* Responsive para pantallas chicas */
+@media (max-width: 768px) {
+  .picada-card {
+    flex-direction: column;
+  }
+
+  .picada-card img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .picada-descripcion {
+    padding: 1rem;
+  }
+
+  .header-tamaños {
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}

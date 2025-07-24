@@ -1,47 +1,59 @@
+/* General */
+body {
+  font-family: 'Playpen Sans Deva', cursive;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4f9);
+  margin: 0;
+  padding: 0;
+}
+
 .tortas-page {
   padding: 3rem 1rem;
-  background: linear-gradient(to bottom, rgb(255, 240, 245), rgb(255, 228, 249));
   text-align: center;
+}
 
-  .titulo-principal {
-    font-family: 'Playpen Sans Deva', cursive;
-    font-size: 2.8rem;
-    color: rgb(208, 109, 185);
-    margin-bottom: 1.5rem;
-  }
+.titulo-principal {
+  font-size: 2.8rem;
+  color: #d06db9;
+  margin-bottom: 1.5rem;
+}
 
-  .subtitulo {
-    font-size: 1.2rem;
-    color: rgb(107, 62, 100);
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-  }
+.subtitulo {
+  font-size: 1.2rem;
+  color: #6b3e64;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
 
-  .tortas-carousel {
-    max-width: 750px;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(208, 109, 185, 0.25);
+/* Carrusel */
+.tortas-carousel {
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(208, 109, 185, 0.25);
+}
 
-    img {
-      height: 320px;   
-      width: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      display: block;
-    }
+.tortas-carousel .carousel-item {
+  background-color: #fff;
+}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: rgb(208, 109, 185);
-      border-radius: 50%;
-      padding: 10px;
-    }
+.tortas-carousel img {
+  height: 500px;
+  width: 100%;
+  object-fit: center;
+  display: block;
+  border-radius: 10px;
+}
 
-    .carousel-control-prev,
-    .carousel-control-next {
-      filter: drop-shadow(0 0 5px rgb(208, 109, 185));
-    }
-  }
+/* Botones de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #d06db9;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(0 0 5px #d06db9);
 }

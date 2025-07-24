@@ -1,45 +1,149 @@
+@charset "UTF-8";
+/* General */
+body {
+  font-family: "Playpen Sans Deva", cursive;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4f9);
+  margin: 0;
+  padding: 0;
+}
+
 .tortas-page {
   padding: 3rem 1rem;
-  background: linear-gradient(to bottom, rgb(255, 240, 245), rgb(255, 228, 249));
   text-align: center;
 }
-.tortas-page .titulo-principal {
-  font-family: "Playpen Sans Deva", cursive;
+
+.titulo-principal {
   font-size: 2.8rem;
-  color: rgb(208, 109, 185);
+  color: #d06db9;
   margin-bottom: 1.5rem;
 }
-.tortas-page .subtitulo {
+
+.subtitulo {
   font-size: 1.2rem;
-  color: rgb(107, 62, 100);
+  color: #6b3e64;
   margin-bottom: 2.5rem;
   line-height: 1.6;
 }
-.tortas-page .tortas-carousel {
+
+/* Carrusel */
+.tortas-carousel {
   max-width: 750px;
   margin: 0 auto;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(208, 109, 185, 0.25);
 }
-.tortas-page .tortas-carousel img {
-  height: 320px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
+
+.tortas-carousel .carousel-item {
+  background-color: #fff;
 }
-.tortas-page .tortas-carousel .carousel-control-prev-icon,
-.tortas-page .tortas-carousel .carousel-control-next-icon {
-  background-color: rgb(208, 109, 185);
+
+.tortas-carousel img {
+  height: 500px;
+  width: 100%;
+  object-fit: center;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Botones de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #d06db9;
   border-radius: 50%;
   padding: 10px;
 }
-.tortas-page .tortas-carousel .carousel-control-prev,
-.tortas-page .tortas-carousel .carousel-control-next {
-  filter: drop-shadow(0 0 5px rgb(208, 109, 185));
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(0 0 5px #d06db9);
 }
 
+/* General */
+body {
+  font-family: "Playpen Sans Deva", cursive;
+  background-color: #fff0f5; /* rosa claro */
+  margin: 0;
+  padding: 0;
+  color: #4b0049; /* violeta oscuro */
+}
+
+/* Main container */
+main.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header vertical */
+.header-tamaños {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fce4ec; /* rosa pastel */
+  padding: 1rem;
+  border-left: 5px solid #d81b60; /* fucsia */
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Picada Card */
+.picada-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Imagen de la picada */
+.picada-card img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Descripción */
+.picada-descripcion {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  background-color: #fff8fb;
+}
+
+.picada-descripcion h3 {
+  color: #880e4f; /* violeta fuerte */
+  margin-top: 0;
+}
+
+.picada-descripcion p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* Responsive para pantallas chicas */
+@media (max-width: 768px) {
+  .picada-card {
+    flex-direction: column;
+  }
+  .picada-card img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .picada-descripcion {
+    padding: 1rem;
+  }
+  .header-tamaños {
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}
 .top-bars {
   display: flex;
   justify-content: center;
