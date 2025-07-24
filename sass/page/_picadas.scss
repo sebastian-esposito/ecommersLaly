@@ -64,25 +64,3 @@ main.container {
   margin: 0.5rem 0;
   line-height: 1.5;
 }
-
-/* Responsive para pantallas chicas */
-@media (max-width: 768px) {
-  .picada-card {
-    flex-direction: column;
-  }
-
-  .picada-card img {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .picada-descripcion {
-    padding: 1rem;
-  }
-
-  .header-tamaños {
-    font-size: 1rem;
-    align-items: center;
-    text-align: center;
-  }
-}
